@@ -1,5 +1,13 @@
 import java.util.*;
 import java.io.*;
+//Project 3: Maximum Subsequence Sum
+//This program implements four versions of the Maximum Subsequence Sum
+//algorithim prompting the user to choose one of these four or all four of
+//them. The program then calculates the run time for each algorithim based on
+//the sequence given by the input file.
+//Dalton Kohl - dkohl@sandiego.edu
+//Bo Kulbacki - rkulbacki@sandiego.edu
+//Date modified: 3-22-21
 
 public class MSS 
 {
@@ -8,6 +16,8 @@ public class MSS
 		boolean running = true;
 		while (running)
 		{
+			//prompts the user to input the starting file and select which
+			//algorithims to run
 			Scanner input = new Scanner(System.in);
 			System.out.println("Welcome to MSS project.");
 			int [] numbers = createArray();
@@ -23,6 +33,8 @@ public class MSS
 			System.out.println("(e) All of the above.");
 			String inputChoice = input.nextLine();
 
+			//runs the algorithims based upon user selection and prints the
+			//run time
 			switch (inputChoice)
 			{		
 			
@@ -98,18 +110,17 @@ public class MSS
 		}	
 		}	
 
-
-
-
-		//int [] nums = {-2};
-		//System.out.println(mssThree(nums, 0, nums.length-1));
 	}	
+	//prompts user to input a file with a series of numbers and returns an
+	//array containing the included numbers
 	public static int [] createArray()
 	{
 		try{
+		//prompts user to input file name
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Enter a file name: ");
 		String fileName = kb.nextLine();
+		//opens the file and converts the input into an array
 		BufferedReader file = new BufferedReader(new FileReader(fileName));
 		String fileLine = file.readLine();
 		StringTokenizer ints = new StringTokenizer(fileLine,",");
@@ -135,7 +146,9 @@ public class MSS
 		}
 		return null;
 	}
-		
+	
+	//Implementation of the MSS One algorithim, this was discussed heavily in
+	//class. Uses three for loops. 	
 	public static void mssOne(int [] nums) 
 	{
 		int maxSum=0;
@@ -158,7 +171,8 @@ public class MSS
 		
 	}
 
-
+	//Implementation of the MSS Two algorithim, this was discussed heavily in
+	//class. Uses two for loops.
 	public static void mssTwo(int [] nums)
 	{
 		int maxSum=0;
@@ -177,7 +191,8 @@ public class MSS
 			}	
 	}	
 
-	//recursive MSS
+	//Implementation of the MSS Three algorithim, this was discussed heavily
+	//in class. Uses recursion. 
 	public static int mssThree (int [] nums, int left, int right)
 	{
 		if (left == right)
@@ -216,7 +231,8 @@ public class MSS
 	}	
 
 
-
+	//Implementation of the MSS Four algorithim, this was discussed heavily in
+	//class. Uses one for loop.
 	public static void mssFour (int [] nums)
 	{
 		int maxSum=0;

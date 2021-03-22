@@ -1,0 +1,23 @@
+Script started on Mon 22 Mar 2021 04:35:23 PM PDT
+]0;dkohl@bec307dl01:~/comp230/projects/proj3[?1034h[38;5;39mdkohl(B[m[38;5;15m@(B[m[38;5;136mbec307dl01(B[m[38;5;15m (B[m[38;5;2mproj3(B[m[38;5;15m>(B[m javac MSS.java
+]0;dkohl@bec307dl01:~/comp230/projects/proj3[38;5;39mdkohl(B[m[38;5;15m@(B[m[38;5;136mbec307dl01(B[m[38;5;15m (B[m[38;5;2mproj3(B[m[38;5;15m>(B[m java MSS
+Welcome to MSS project.
+Enter a file name: 
+test1.txt
+(a) MSS One - Triple loop.
+(b) MSS Two - Double loop.
+(c) MSS Three - Recursive function.
+(d) MSS Four - Single loop.
+(e) All of the above.
+e
+MSS One Time    =       33762.0000
+MSS Two Time    =        9858.0000
+MSS Three Time  =      190628.0000
+MSS Four Time   =        7850.0000
+MSS Total Time  =      242098.0000
+Would you like to run the program again?(y or n)
+n
+]0;dkohl@bec307dl01:~/comp230/projects/proj3[38;5;39mdkohl(B[m[38;5;15m@(B[m[38;5;136mbec307dl01(B[m[38;5;15m (B[m[38;5;2mproj3(B[m[38;5;15m>(B[m exit
+exit
+
+Script done on Mon 22 Mar 2021 04:35:45 PM PDT
