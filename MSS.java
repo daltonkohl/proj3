@@ -19,7 +19,7 @@ public class MSS
 			//prompts the user to input the starting file and select which
 			//algorithims to run
 			Scanner input = new Scanner(System.in);
-			System.out.println("Welcome to MSS project.");
+			System.out.println("Welcome to MSS project. All times included are in nanoseconds.");
 			int [] numbers = createArray();
 			//System.out.println(Arrays.toString(numbers));
 			double mss1Start, mss1End, mss2Start, mss2End, mss3Start, mss3End, mss4Start, mss4End; 
